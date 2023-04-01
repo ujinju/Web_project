@@ -30,6 +30,33 @@
       .attachment-local {
         background-attachment: local;
       }
+      .background-size {
+        width: 300px;
+        height: 300px;
+        background-image: url('/assets/images/dolphin.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border: 1px solid black;
+      }
+      .linear-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid red;
+        background: linear-gradient(to right, red 50%, blue 80%, yellow 100%);
+      }
+      .radial-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid blue;
+        background: radial-gradient(
+          circle at 10% 50%,
+          white,
+          yellow,
+          red,
+          blue
+        );
+      }
     </style>
   </head>
   <body>
@@ -127,6 +154,16 @@
       voluptates. Iure magnam voluptatibus, rem minus delectus aliquam
       exercitationem illo.
     </div>
+
+    <h3>background-size</h3>
+    <div class="background-size"></div>
+
+    <h3>linear-gradient</h3>
+    <div class="linear-gradient"></div>
+
+    <h3>radial-gradient</h3>
+    <div class="radial-gradient"></div>
+
     <div style="height: 1000px; width: 10px; background-color: red"></div>
   </body>
 </html>
