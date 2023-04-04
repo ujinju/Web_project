@@ -23,16 +23,41 @@
         text-align: center;
         border: 1px solid yellow;
       }
+      .item1 {
+        /* order: 2;  */
+        flex-grow: 2;
+        flex-shrink: 2;
+      }
+      .item2 {
+        /* order: 3; */
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+      .item3 {
+        /* order: 4; */
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+      .item4 {
+        /* order: 1; */
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+      .item5 {
+        /* order: 0; */
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
     </style>
   </head>
   <body>
     <title>Flexvox Basic</title>
     <div class="flex-container">
-      <div class="flex-item">1</div>
-      <div class="flex-item">2</div>
-      <div class="flex-item">3</div>
-      <div class="flex-item">4</div>
-      <div class="flex-item">5</div>
+      <div class="flex-item item1">1</div>
+      <div class="flex-item item2">2</div>
+      <div class="flex-item item3">3</div>
+      <div class="flex-item item4">4</div>
+      <div class="flex-item item5">5</div>
     </div>
   </body>
 </html>
